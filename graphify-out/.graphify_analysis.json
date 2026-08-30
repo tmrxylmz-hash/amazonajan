@@ -1,0 +1,317 @@
+{
+  "communities": {
+    "0": [
+      "connection",
+      "exporter",
+      "exporter_export_candidates_report",
+      "exporter_export_project_bundle",
+      "keepa_ready",
+      "keepa_ready_build_keepa_api_request",
+      "keepa_ready_build_keepa_payload",
+      "keepa_ready_save_keepa_queue",
+      "main",
+      "main_run_project_cycle",
+      "market_history",
+      "market_history_add_history_snapshot",
+      "market_history_build_history_report",
+      "market_history_ensure_history_file",
+      "market_history_load_history",
+      "market_history_save_history",
+      "monitoring",
+      "monitoring_compare_candidates_with_history",
+      "storage",
+      "storage_create_candidates_table",
+      "storage_ensure_db",
+      "storage_load_candidates",
+      "storage_save_candidates",
+      "tests_test_market_history",
+      "tests_test_market_history_test_history_snapshot_is_stored_and_reported",
+      "tests_test_market_history_test_load_history_returns_list",
+      "tests_test_monitoring",
+      "tests_test_monitoring_test_compare_candidates_with_history_detects_change",
+      "tests_test_product_detail_fetcher_test_build_keepa_api_request_and_export_bundle",
+      "tests_test_storage",
+      "tests_test_storage_test_save_and_load_candidates_round_trip"
+    ],
+    "1": [
+      "ai_assessor",
+      "ai_assessor_generate_ai_summary",
+      "config",
+      "data_sources",
+      "data_sources_load_demo_candidates",
+      "filters",
+      "filters_filter_candidates",
+      "filters_passes_criteria",
+      "models",
+      "models_productcandidate",
+      "models_productcandidate_score_ready",
+      "research_engine",
+      "research_engine_build_research_report",
+      "scoring",
+      "scoring_score_candidate",
+      "scoring_score_competition",
+      "scoring_score_market_fit",
+      "scoring_score_profitability",
+      "scoring_score_risk",
+      "scoring_score_sales",
+      "tests_test_filtering",
+      "tests_test_filtering_test_filter_candidates_excludes_weak_matches",
+      "tests_test_filtering_test_passes_criteria_for_valid_candidate",
+      "tests_test_scoring",
+      "tests_test_scoring_test_candidate_scoring_penalizes_high_risk_products",
+      "tests_test_scoring_test_candidate_scoring_rewards_profitable_and_low_risk_products",
+      "tests_test_scoring_test_search_criteria_has_us_to_de_target_values"
+    ],
+    "2": [
+      "basehttprequesthandler",
+      "dashboard",
+      "dashboard_build_dashboard_scan_config",
+      "dashboard_build_export_bundle_name",
+      "dashboard_build_export_links",
+      "dashboard_build_status_message",
+      "dashboard_build_summary_cards",
+      "dashboard_clean_list",
+      "dashboard_dashboardrequesthandler",
+      "dashboard_dashboardrequesthandler_do_get",
+      "dashboard_dashboardrequesthandler_do_post",
+      "dashboard_dashboardrequesthandler_log_message",
+      "dashboard_extract_asin_from_url",
+      "dashboard_load_saved_filters",
+      "dashboard_parse_bool",
+      "dashboard_render_candidate_rows",
+      "dashboard_render_dashboard_page",
+      "dashboard_run_dashboard_scan",
+      "dashboard_save_filter_config",
+      "dashboard_slugify",
+      "dashboard_start_dashboard_server",
+      "tests_test_dashboard",
+      "tests_test_dashboard_test_build_dashboard_scan_config_uses_user_filters_and_search_terms",
+      "tests_test_dashboard_test_dashboard_mode_and_export_name_are_clear_and_persisted"
+    ],
+    "3": [
+      "data_sources_build_amazon_search_url",
+      "data_sources_build_real_source_plan",
+      "data_sources_build_request_session",
+      "search_provider",
+      "search_provider_build_amazon_search_url",
+      "search_provider_build_search_fallback_urls",
+      "search_provider_build_web_fallback_url",
+      "search_provider_extract_amazon_result_cards",
+      "search_provider_extract_web_fallback_results",
+      "search_provider_fetch_search_results",
+      "session",
+      "tests_test_real_world_data_sources",
+      "tests_test_real_world_data_sources_test_build_real_source_plan_returns_amazon_priority_with_fallbacks",
+      "tests_test_real_world_data_sources_test_build_request_session_adds_browser_headers",
+      "tests_test_search_provider",
+      "tests_test_search_provider_fakeresponse",
+      "tests_test_search_provider_fakeresponse_init",
+      "tests_test_search_provider_fakeresponse_raise_for_status",
+      "tests_test_search_provider_fakesession",
+      "tests_test_search_provider_fakesession_get",
+      "tests_test_search_provider_fakesession_init",
+      "tests_test_search_provider_test_build_amazon_search_url_uses_market_specific_domain",
+      "tests_test_search_provider_test_extract_amazon_result_cards_parses_asin_and_title",
+      "tests_test_search_provider_test_fetch_search_results_falls_back_when_amazon_blocks"
+    ],
+    "4": [
+      "product_detail_fetcher",
+      "product_detail_fetcher_build_product_url",
+      "product_detail_fetcher_enrich_candidate_with_asin_detail",
+      "product_detail_fetcher_extract_detail_fields",
+      "product_detail_fetcher_fetch_product_details",
+      "product_detail_fetcher_fetch_real_market_data_for_asin",
+      "product_detail_fetcher_is_valid_amazon_product_page",
+      "tests_test_product_detail_fetcher",
+      "tests_test_product_detail_fetcher_fakeresponse",
+      "tests_test_product_detail_fetcher_fakeresponse_init",
+      "tests_test_product_detail_fetcher_fakeresponse_raise_for_status",
+      "tests_test_product_detail_fetcher_fakesession",
+      "tests_test_product_detail_fetcher_fakesession_get",
+      "tests_test_product_detail_fetcher_fakesession_init",
+      "tests_test_product_detail_fetcher_test_build_product_url_uses_asin_in_amazon_domain",
+      "tests_test_product_detail_fetcher_test_enrich_candidate_with_asin_detail_and_keepa_payload_use_real_product_data",
+      "tests_test_product_detail_fetcher_test_extract_detail_fields_parses_title_and_price",
+      "tests_test_product_detail_fetcher_test_fetch_real_market_data_for_asin_returns_validated_market_details",
+      "tests_test_product_detail_fetcher_test_is_valid_amazon_product_page_checks_real_product_markers"
+    ],
+    "5": [
+      "product_matcher",
+      "product_matcher_build_amazon_de_search_url",
+      "product_matcher_calculate_competition_score",
+      "product_matcher_compare_market_pair",
+      "research_engine_run_research_scan",
+      "scan_runner",
+      "scan_runner_deduplicate_candidates",
+      "scan_runner_run_scan_cycle",
+      "tests_test_dashboard_test_run_scan_cycle_applies_user_criteria",
+      "tests_test_product_matcher",
+      "tests_test_product_matcher_test_build_amazon_de_search_url_uses_asin_keyword",
+      "tests_test_product_matcher_test_calculate_competition_score_penalizes_amazon_seller_and_many_fba_sellers",
+      "tests_test_product_matcher_test_compare_market_pair_estimates_de_price_and_roi",
+      "tests_test_scan_runner",
+      "tests_test_scan_runner_test_deduplicate_candidates_keeps_highest_score_for_same_asin",
+      "tests_test_scan_runner_test_run_scan_cycle_returns_scan_summary_and_deduplicated_candidates"
+    ],
+    "6": [
+      "market_analysis",
+      "market_analysis_analyze_candidate",
+      "market_analysis_calculate_profit",
+      "market_analysis_estimate_de_price",
+      "tests_test_market_analysis",
+      "tests_test_market_analysis_test_analyze_candidate_returns_profit_and_roi_for_us_to_de_flow",
+      "tests_test_market_analysis_test_calculate_profit_uses_basic_fee_model",
+      "tests_test_market_analysis_test_estimate_de_price_uses_reasonable_euro_multiplier"
+    ],
+    "7": [
+      "scheduler",
+      "scheduler_scanscheduler",
+      "scheduler_scanscheduler_init",
+      "scheduler_scanscheduler_run_every_interval",
+      "scheduler_scheduled_scan"
+    ],
+    "8": [
+      "product_details",
+      "product_details_extract_product_details",
+      "tests_test_product_detail",
+      "tests_test_product_detail_test_extract_product_details_parses_amazon_like_html"
+    ]
+  },
+  "cohesion": {
+    "0": 0.16129032258064516,
+    "1": 0.17094017094017094,
+    "2": 0.16304347826086957,
+    "3": 0.15217391304347827,
+    "4": 0.21052631578947367,
+    "5": 0.25833333333333336,
+    "6": 0.5357142857142857,
+    "7": 0.5,
+    "8": 0.8333333333333334
+  },
+  "gods": [
+    {
+      "id": "main_run_project_cycle",
+      "label": "run_project_cycle()",
+      "degree": 14
+    },
+    {
+      "id": "scan_runner_run_scan_cycle",
+      "label": "run_scan_cycle()",
+      "degree": 13
+    },
+    {
+      "id": "scoring_score_candidate",
+      "label": "score_candidate()",
+      "degree": 11
+    },
+    {
+      "id": "models_productcandidate",
+      "label": "ProductCandidate",
+      "degree": 10
+    },
+    {
+      "id": "exporter_export_project_bundle",
+      "label": "export_project_bundle()",
+      "degree": 9
+    },
+    {
+      "id": "dashboard_render_dashboard_page",
+      "label": "render_dashboard_page()",
+      "degree": 9
+    },
+    {
+      "id": "data_sources_build_real_source_plan",
+      "label": "build_real_source_plan()",
+      "degree": 9
+    },
+    {
+      "id": "search_provider_fetch_search_results",
+      "label": "fetch_search_results()",
+      "degree": 9
+    },
+    {
+      "id": "product_detail_fetcher_fetch_real_market_data_for_asin",
+      "label": "fetch_real_market_data_for_asin()",
+      "degree": 9
+    },
+    {
+      "id": "keepa_ready_build_keepa_api_request",
+      "label": "build_keepa_api_request()",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "load_demo_candidates()",
+      "target": "ProductCandidate",
+      "source_files": [
+        "data_sources.py",
+        "models.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `load_demo_candidates()` unexpectedly reaches hub `ProductCandidate`"
+    },
+    {
+      "source": "run_dashboard_scan()",
+      "target": "export_project_bundle()",
+      "source_files": [
+        "dashboard.py",
+        "exporter.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "test_enrich_candidate_with_asin_detail_and_keepa_payload_use_real_product_data()",
+      "target": "build_keepa_payload()",
+      "source_files": [
+        "tests/test_product_detail_fetcher.py",
+        "keepa_ready.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "run_project_cycle()",
+      "target": "enrich_candidate_with_asin_detail()",
+      "source_files": [
+        "main.py",
+        "product_detail_fetcher.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "run_project_cycle()",
+      "target": "run_scan_cycle()",
+      "source_files": [
+        "main.py",
+        "scan_runner.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `run_scan_cycle()` connect `run_scan_cycle` to `main.py`, `dashboard.py`?",
+      "why": "High betweenness centrality (0.094) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `fetch_search_results()` connect `search_provider.py` to `research_engine.py`, `run_scan_cycle`?",
+      "why": "High betweenness centrality (0.070) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `run_research_scan()` connect `run_scan_cycle` to `research_engine.py`, `search_provider.py`?",
+      "why": "High betweenness centrality (0.059) - this node is a cross-community bridge."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{'api_key': '', 'market': 'com', 'asins': ['B0TEST123'], 'items': [{'asin': 'B0TEST123', 'product_name': 'Portable Blender', 'verified_title': 'Portable Blender', 'us_price': None, 'de_price': 59.98, 'verified_price': 59.98, 'roi': 92.0, 'score': 70.0, 'market': 'com', 'status': 'keepa_ready', 'is_valid_amazon_product': True, 'source_url': None, 'image_url': None}]}
